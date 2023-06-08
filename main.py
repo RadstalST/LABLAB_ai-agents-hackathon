@@ -6,3 +6,7 @@ st.set_page_config(
 )
 
 st.write("# Welcome to Streamlit! 👋")
+#load ./src/introduction.md and display as markdown
+with open("./src/introduction.md","r") as f:
+    introduction = f.read()
+st.markdown(introduction)
